@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".engine.GameActivity"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/editText3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:text="&lt;"
+        android:src="@drawable/ic_back"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/scoreboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+    <TextView
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/price"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/grey_text"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+    <TextView
+        android:id="@+id/reward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:paddingTop="0dp"
+        android:text="0.0"
+        android:paddingBottom="0dp"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+    <TextView
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:paddingBottom="0dp"
+        android:text="Время"
+        android:paddingTop="0dp"
+        android:textColor="@color/grey_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reward" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:text="00:00"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+
+    <TextView
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:text="Баллов"
+        android:textColor="@color/grey_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:text="100"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText6" />
+
+    <TextView
+        android:id="@+id/problemTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="10+10"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/score" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/mainAccent"
+        android:paddingStart="40dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="40dp"
+        android:paddingBottom="20dp"
+        android:text="20"
+
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/problemTitle" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="1dp"
+        android:layout_height="111dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/problemTitle" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E81E72"
+        android:paddingStart="40dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="40dp"
+        android:paddingBottom="20dp"
+        android:text="20"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/problemTitle" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E81E72"
+        android:paddingStart="40dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="40dp"
+        android:paddingBottom="20dp"
+        android:text="20"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E81E72"
+        android:paddingStart="40dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="40dp"
+        android:paddingBottom="20dp"
+        android:text="20"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

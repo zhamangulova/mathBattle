@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MathBattle</string>
+    <string name="name">введите имя</string>
+    <string name="begin">Начать</string>
+    <string name="price">Вознаграждение</string>
+    <string name="title_activity_base">MainActivity</string>
+    <string name="title_home">Главная</string>
+    <string name="title_dashboard">Рейтинг</string>
+    <string name="title_notifications">Профиль</string>
+</resources>

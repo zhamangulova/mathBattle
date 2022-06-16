@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "678435285339",
+    "firebase_url": "https://mathbattle-205b4-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "mathbattle-205b4",
+    "storage_bucket": "mathbattle-205b4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678435285339:android:e933f8b9de76c9f836527e",
+        "android_client_info": {
+          "package_name": "io.flaterlab.mathbattle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678435285339-9vkmnf0ael9iols98lmm9hnq6jng8bkb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiyQ9If_YTLxs4p8SKCrsPxUbUona_7t8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678435285339-9vkmnf0ael9iols98lmm9hnq6jng8bkb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
